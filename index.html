@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find The Bomb Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="malware.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Difficulty Selection Screen -->
+    <div id="difficulty-screen">
+      <h1>Choose Difficulty</h1>
+      <div class="difficulty-selection">
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+      </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" style="display:none;">
+      <div class="info">
+        <p class="message">Game Started! Find the bomb!</p>
+        <p class="score">Score: 0</p>
+        <p class="timer">Time Left: 60s</p>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid" style="display: grid;"></div>
+      </div>
+
+      <div class="controls">
+        <button id="freeze-timer">Freeze Timer</button>
+        <button id="reveal-safe-cell">Reveal Safe Cell</button>
+        <button id="bomb-radar">Bomb Radar</button>
+      </div>
+
+      <button id="restart" style="display:none;">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
